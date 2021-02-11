@@ -13,7 +13,7 @@ import { PageBlock } from 'notion-types'
 import { NotionRenderer, Code, Collection, CollectionRow } from 'react-notion-x'
 
 // utils
-import { getBlockTitle } from 'notion-utils'
+import { getBlockTitle, parsePageId } from 'notion-utils'
 import { mapPageUrl, getCanonicalPageUrl } from 'lib/map-page-url'
 import { mapNotionImageUrl } from 'lib/map-image-url'
 import { getPageDescription } from 'lib/get-page-description'
@@ -139,6 +139,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   let comments: React.ReactNode = null
   let pageAside: React.ReactChild = null
+  // let pageCover: React.ReactChild = null
 
   // only display comments and page actions on blog post pages
   if (isBlogPost) {
@@ -160,6 +161,10 @@ export const NotionPage: React.FC<types.PageProps> = ({
   } else {
     pageAside = <PageSocial />
   }
+
+  // if (isRootPage) {
+  //   pageCover = <PageCover></PageCover> // TODO
+  // }
 
   return (
     <>
@@ -269,6 +274,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
             toggleDarkMode={darkMode.toggle}
           />
         }
+        // pageCover={pageCover}
       />
 
       {/* <GitHubShareButton /> */}
