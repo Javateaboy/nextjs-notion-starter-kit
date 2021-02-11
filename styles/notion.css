@@ -24,7 +24,7 @@
 }
 
 .notion-text {
-  padding: 0.5em 2px;
+  padding: 0.5em 2em;
 }
 
 .notion-asset-caption {
@@ -136,6 +136,27 @@
 
 .notion-hr {
   margin: 2em 0;
+}
+
+.notion-list {
+  margin-left: 2.5em;
+}
+
+.notion-to-do-item {
+  margin-left: 2.5em;
+}
+
+.notion-list-disc {
+  position: relative;
+  padding: 0;
+  list-style-type: "\1F449";
+}
+
+.notion-list-disc li {
+  padding: 0.5em;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  line-height: 1.5;
 }
 
 @media only screen and (max-width: 920px) {
