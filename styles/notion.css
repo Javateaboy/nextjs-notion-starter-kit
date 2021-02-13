@@ -366,3 +366,7 @@
   backdrop-filter: saturate(180%) blur(8px);
 }
 
+.notion-bookmark:hover {
+  border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
+  border-image-slice: 1;
+}
