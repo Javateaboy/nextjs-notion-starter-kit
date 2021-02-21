@@ -15,7 +15,7 @@ import { Tweet, Twitter } from 'react-static-tweets'
 import { NotionRenderer, Code, Collection, CollectionRow } from 'react-notion-x'
 
 // utils
-import { getBlockTitle, parsePageId } from 'notion-utils'
+import { getBlockTitle } from 'notion-utils'
 import { mapPageUrl, getCanonicalPageUrl } from 'lib/map-page-url'
 import { mapNotionImageUrl } from 'lib/map-image-url'
 import { getPageDescription } from 'lib/get-page-description'
