@@ -9,7 +9,7 @@ import BodyClassName from 'react-body-classname'
 import useDarkMode from 'use-dark-mode'
 import { PageBlock } from 'notion-types'
 
-import { Tweet, Twitter } from 'react-static-tweets'
+import { Tweet, TwitterContextProvider } from 'react-static-tweets'
 
 // core notion renderer
 import { NotionRenderer, Code, Collection, CollectionRow } from 'react-notion-x'
@@ -26,7 +26,6 @@ import * as config from 'lib/config'
 
 // components
 import { CustomFont } from './CustomFont'
-import { CustomHtml } from './CustomHtml'
 import { Loading } from './Loading'
 import { Page404 } from './Page404'
 import { PageHead } from './PageHead'
@@ -166,7 +165,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   // }
 
   return (
-    <Twitter.Provider
+    <TwitterContextProvider
       value={{
         tweetAstMap: (recordMap as any).tweetAstMap || {},
         swrOptions: {
@@ -284,9 +283,14 @@ export const NotionPage: React.FC<types.PageProps> = ({
         // pageCover={pageCover}
       />
 
+<<<<<<< HEAD
       {/* <GitHubShareButton /> */}
 
       <CustomHtml site={site} />
     </Twitter.Provider>
+=======
+      <GitHubShareButton />
+    </TwitterContextProvider>
+>>>>>>> afaed50355dce9a0d281d83d654f7484e82da1e5
   )
 }
