@@ -282,14 +282,10 @@ export const NotionPage: React.FC<types.PageProps> = ({
         // pageCover={pageCover}
       />
 
-<<<<<<< HEAD
       {/* <GitHubShareButton /> */}
 
-      <CustomHtml site={site} />
-    </Twitter.Provider>
-=======
-      <GitHubShareButton />
+      {/* <CustomHtml site={site} /> */}
+      {/* <GitHubShareButton /> */}
     </TwitterContextProvider>
->>>>>>> afaed50355dce9a0d281d83d654f7484e82da1e5
   )
 }

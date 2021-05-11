@@ -19,7 +19,7 @@ module.exports = {
 
   // social usernames (optional)
   twitter: 'dogetemmie',
-  github: 'Javateaboy',
+  github: 'A-yum3',
   // linkedin: 'fisch2',
 
   // default notion icon and cover images for site-wide consistency (optional)
